@@ -33,7 +33,7 @@ export const signup = (email, password, username) => {
             username: username
           }
       };
-      let url = 'http://localhost:3001/api/users';
+      let url = 'https://my-cook-book-react.herokuapp.com/api/users';
       fetch(url, {
               method: "POST",
               mode: "cors",
@@ -91,7 +91,7 @@ export const login = (email, password) => {
             password: password
           }
       };
-      let url = 'http://localhost:3001/api/user_token';
+      let url = 'https://my-cook-book-react.herokuapp.com/api/users/api/user_token';
       fetch(url, {
               method: "POST",
               mode: "cors",

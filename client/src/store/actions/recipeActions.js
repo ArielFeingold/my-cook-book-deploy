@@ -33,7 +33,7 @@ export const addRecipe = (title, ingredients, category) => {
         user_id: localStorage.getItem('userId')
       }
     };
-    let url = 'http://localhost:3001/api/recipes';
+    let url = 'https://my-cook-book-react.herokuapp.com/api/users/api/recipes';
     const token = localStorage.getItem('token')
     fetch(url, {
             method: "POST",
@@ -82,7 +82,7 @@ export const deleteRecipeSuccess = (id) => {
 export const deleteRecipe = (id) => {
   return dispatch => {
     dispatch(deleteRecipeStart());
-    let url = `http://localhost:3001/api/recipes/${id}`;
+    let url = `https://my-cook-book-react.herokuapp.com/api/users/api/recipes/${id}`;
     const token = localStorage.getItem('token')
     fetch(url, {
             method: "DELETE",
@@ -139,7 +139,7 @@ export const updateRecipe = (id, title, ingredients, category) => {
         category: category,
       }
     };
-    let url = `http://localhost:3001/api/recipes/${id}`;
+    let url = `https://my-cook-book-react.herokuapp.com/api/users/api/recipes/${id}`;
     const token = localStorage.getItem('token')
     fetch(url, {
             method: "PATCH",
@@ -195,7 +195,7 @@ export const getRecipes = () =>{
   return dispatch => {
     dispatch(getRecipesStart());
     const token = localStorage.getItem('token')
-    const url = 'http://localhost:3001/api/recipes'
+    const url = 'https://my-cook-book-react.herokuapp.com/api/users/api/recipes'
     fetch(url, {
        method: 'GET',
        headers: {
@@ -242,7 +242,7 @@ export const getRecipeFail = (error) => {
 export const getRecipe = (recipeId) =>{
   return dispatch => {
     const token = localStorage.getItem('token')
-    const url = `http://localhost:3001/api/recipes/${recipeId}`
+    const url = `https://my-cook-book-react.herokuapp.com/api/users/api/recipes/${recipeId}`
     fetch(url, {
        method: 'GET',
        headers: {
