@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "My CookBook",
   "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
   "engines": {
     "node": "8.12.0"
   },
