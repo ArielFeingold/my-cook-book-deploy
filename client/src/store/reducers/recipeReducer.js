@@ -88,17 +88,6 @@ const getRecipeFail = (state, action) => {
   return updateObject( state, { error: action.error, loading: false });
 };
 
-const clearRecipe = (state, action) => {
-  return updateObject( state, {
-    recipeId: "",
-    recipeTitle: "",
-    recipeIngredients: "",
-    recipeCategory: "",
-    errors: "",
-    loading: false,
-  })
-};
-
 const reducer = ( state = initialState, action ) => {
     switch ( action.type ) {
         case actionTypes.ADD_RECIPE_START: return addRecipeStart(state, action);
