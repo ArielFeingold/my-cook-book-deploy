@@ -6,7 +6,6 @@ import * as actions from '../../store/actions/index';
 import { Container, Row, Col, Button } from 'mdbreact';
 import { Alert } from 'reactstrap';
 import Spinner from '../../components/UI/Spinner'
-import BodyBackgroundColor from 'react-body-backgroundcolor'
 
 class Signup extends Component {
 
@@ -61,7 +60,6 @@ class Signup extends Component {
             <Col md="3"/>
             <Col md="6">
               {spinner}
-              <BodyBackgroundColor backgroundColor='#e8ecf4'>
                 <form  className='needs-validation p-3' onSubmit={this.submitHandler} noValidate>
                   <p className="h4 text-center mb-4 mt-2">Sign up</p>
                   {takenWarning}
@@ -82,7 +80,6 @@ class Signup extends Component {
                     <Button className="btn btn-indigo" type="submit">Register</Button>
                   </div>
                 </form>
-              </BodyBackgroundColor>
             </Col>
           </Row>
         </Container>

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import * as actions from './store/actions/index';
 import Header from './components/Navigation/Header'
 import Main from './components/Navigation/Main'
-import BodyBackgroundColor from 'react-body-backgroundcolor'
+
 
 import './App.css';
 
@@ -15,12 +15,10 @@ class App extends Component {
 
   render() {
     return (
-      <BodyBackgroundColor backgroundColor='#f2f5fc'>
         <div>
           <Header isAuth={this.props.isAuthenticated}/>
           <Main isAuth={this.props.isAuthenticated}/>
         </div>
-      </BodyBackgroundColor>
     );
   }
 }
