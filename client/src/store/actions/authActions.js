@@ -91,7 +91,7 @@ export const login = (email, password) => {
             password: password
           }
       };
-      let url = 'https://my-cook-book-react.herokuapp.com/api/users/api/user_token';
+      let url = 'https://my-cook-book-react.herokuapp.com/api/user_token';
       fetch(url, {
               method: "POST",
               mode: "cors",
